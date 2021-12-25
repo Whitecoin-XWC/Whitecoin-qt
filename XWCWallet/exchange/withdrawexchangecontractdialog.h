@@ -38,7 +38,7 @@ private slots:
 
 private:
     Ui::WithdrawExchangeContractDialog *ui;
-    bool isExchangeMode = nullptr;
+    bool isExchangeMode = false;
     int stepCount = 0;      // 合约执行步数
 
     void estimateContractFee();

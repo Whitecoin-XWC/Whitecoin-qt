@@ -2467,7 +2467,7 @@ void Frame::jsonDataUpdated(QString id)
 
             QString blockHeight = id.mid(QString("id+list_transactions+").size());
             XWCWallet::getInstance()->postRPC( "Finish+list_transactions+" + blockHeight,
-                                             toJsonFormat( "Finish+list_transactions", QJsonArray()),
+                                             toJsonFormat( "list_transactions", QJsonArray()),
                                              1);
         }
 

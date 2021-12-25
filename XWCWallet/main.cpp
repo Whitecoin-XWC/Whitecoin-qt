@@ -49,7 +49,7 @@ LONG ApplicationCrashHandler(EXCEPTION_POINTERS *pException)        // 捕获异
     XWCWallet::getInstance()->postRPC( "id-witness_node_stop", toJsonFormat( "witness_node_stop", QJsonArray()), -1);
 
     EXCEPTION_RECORD* record = pException->ExceptionRecord;
-    QString errCode(QString::number(record->ExceptionCode,16)),errAdr(QString::number((uint)record->ExceptionAddress,16)),errMod;
+    QString errCode(QString::number(record->ExceptionCode,16)),errAdr(QString::number((uintptr_t)record->ExceptionAddress,16)),errMod;
     QMessageBox::critical(NULL,"GUI CRASHED",
         QString("error code: %1 \nerror position: %2").arg(errCode).arg(errAdr),
         QMessageBox::Ok);

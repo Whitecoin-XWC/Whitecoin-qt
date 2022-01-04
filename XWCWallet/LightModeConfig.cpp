@@ -39,7 +39,7 @@ LightModeConfig::LightModeConfig(QWidget *parent) :
     // HK
     default_ip_port_vector.append(IP_Port("154.222.23.66", "23455"));
     default_ip_port_vector.append(IP_Port("154.222.23.66", "23454"));
-    default_ip_port_vector.append(IP_Port("154.86.17.133", "23455"));
+    //default_ip_port_vector.append(IP_Port("154.86.17.133", "23455"));
     default_ip_port_vector.append(IP_Port("154.209.69.80", "23455"));
     default_ip_port_vector.append(IP_Port("154.86.18.190", "23455"));
 

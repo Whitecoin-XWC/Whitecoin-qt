@@ -15,45 +15,19 @@ LightModeConfig::LightModeConfig(QWidget *parent) :
     default_ip_port_vector.append(IP_Port("127.0.0.1", "50906"));
 #else
     //xwc_node IP list at here: https://list.xwc.com/list.txt
-
-    // AnXi mobile
-    default_ip_port_vector.append(IP_Port("112.5.37.28", "23455"));
-    default_ip_port_vector.append(IP_Port("112.5.37.28", "23454"));
-
-    // JiNan unicom
-    default_ip_port_vector.append(IP_Port("123.129.217.68", "23455"));
-    default_ip_port_vector.append(IP_Port("123.129.217.68", "23454"));
-
-    // XiaMen telecom
-    default_ip_port_vector.append(IP_Port("110.80.134.19", "23455"));
-    default_ip_port_vector.append(IP_Port("110.80.134.19", "23454"));
-
-    // AnXi telecom
-    default_ip_port_vector.append(IP_Port("117.24.6.145", "23455"));
-    default_ip_port_vector.append(IP_Port("117.24.6.145", "23454"));
-
-    // YangZhou mobile
-    default_ip_port_vector.append(IP_Port("223.111.134.138", "23455"));
-    default_ip_port_vector.append(IP_Port("223.111.134.138", "23454"));
-
-    // HK
-    default_ip_port_vector.append(IP_Port("154.222.23.66", "23455"));
-    default_ip_port_vector.append(IP_Port("154.222.23.66", "23454"));
-    //default_ip_port_vector.append(IP_Port("154.86.17.133", "23455"));
-    default_ip_port_vector.append(IP_Port("154.209.69.80", "23455"));
-    //default_ip_port_vector.append(IP_Port("154.86.18.190", "23455"));
-
-    // Tokyo
-    default_ip_port_vector.append(IP_Port("35.75.78.20", "23455"));
-    default_ip_port_vector.append(IP_Port("35.75.78.20", "23454"));
-
-    // SG
-    default_ip_port_vector.append(IP_Port("18.140.133.151", "23455"));
-    default_ip_port_vector.append(IP_Port("18.140.133.151", "23454"));
-
-    // US
-    default_ip_port_vector.append(IP_Port("54.177.86.70", "23455"));
-    default_ip_port_vector.append(IP_Port("54.177.86.70", "23454"));
+    // HK own servers
+    // xwc_witness_0_0
+    default_ip_port_vector.append(IP_Port("43.242.236.210", "10101"));
+    // xwc_witness_0_1
+    default_ip_port_vector.append(IP_Port("43.242.236.210", "10104"));
+    // xwc_witness_1_0
+    default_ip_port_vector.append(IP_Port("43.242.236.210", "10107"));
+    // xwc_witness_1_1
+    default_ip_port_vector.append(IP_Port("43.242.236.210", "10110"));
+    // xwc_witness_2_0
+    default_ip_port_vector.append(IP_Port("43.242.236.210", "10113"));
+    // xwc_witness_2_1
+    default_ip_port_vector.append(IP_Port("43.242.236.210", "10116"));
 #endif
 
     InitWidget();

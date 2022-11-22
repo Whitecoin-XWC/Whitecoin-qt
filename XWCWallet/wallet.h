@@ -37,7 +37,7 @@
 #define PUBKEY_PREFIX "XWC"
 #define ASSET_PRECISION 8
 
-#define WALLET_VERSION "1.3.5"           // 版本号
+#define WALLET_VERSION "1.3.6"           // 版本号
 
 #ifdef  LIGHT_MODE
 #define AUTO_REFRESH_TIME 15000
@@ -61,7 +61,7 @@
 #define MIDDLE_DEFAULT_URL      "http://192.168.1.121:5005/api"
 #define MIDDLE_EXCHANGE_URL     "http://192.168.1.124:15000/api"
 #else
-#define MIDDLE_DEFAULT_URL      "http://112.5.37.213:5005/api"
+#define MIDDLE_DEFAULT_URL      "http://43.242.236.210:10004/api"
 #define MIDDLE_EXCHANGE_URL     ""               // 查询交易所信息的URL
 #endif
 
